@@ -2,7 +2,7 @@
 
 [![Latest Stable Version](https://poser.pugx.org/hudhaifas/silverstripe-frontend-fields/v/stable)](https://packagist.org/packages/hudhaifas/silverstripe-frontend-fields) [![Total Downloads](https://poser.pugx.org/hudhaifas/silverstripe-frontend-fields/downloads)](https://packagist.org/packages/hudhaifas/silverstripe-frontend-fields) [![Latest Unstable Version](https://poser.pugx.org/hudhaifas/silverstripe-frontend-fields/v/unstable)](https://packagist.org/packages/hudhaifas/silverstripe-frontend-fields) [![License](https://poser.pugx.org/hudhaifas/silverstripe-frontend-fields/license)](https://packagist.org/packages/hudhaifas/silverstripe-frontend-fields)
 
-Frontend Fields is a standard Fronend wapper fot a certain DataObject instances without relationship with a Page, results to list all, search, show object, and edit obejct.
+Upload Image / File from Silverstripe frontend
 
 ### Features
 - Allow upload Image/File from the frontend
