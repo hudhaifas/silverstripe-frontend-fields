@@ -1,11 +1,3 @@
 ---
 Name: frontend-fields
 ---
-
-InboxMessage:
-  extensions:
-    - DataObject_MemberExtension
-    
-SilverStripe\Security\Member:
-  extensions:
-    - MemberInboxExtension
