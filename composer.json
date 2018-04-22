@@ -1,0 +1,29 @@
+{
+    "name": "hudhaifas/silverstripe-frontend-fields",
+    "description": "Upload Image / File from Silverstripe frontend.",
+    "type": "silverstripe-module",
+    "homepage": "https://github.com/hudhaifas/silverstripe-frontend-fields",
+    "keywords": ["silverstripe", "frontend", "field", "image", "file", "upload"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hudhaifa Shatnawi",
+            "email": "me@hudhaifa.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/hudhaifas/silverstripe-frontend-fields/issues"
+    },
+    "require": {
+        "silverstripe/framework": "^4",
+        "silverstripe/cms": "^4",
+        "silverstripe/vendor-plugin": "^1.0"
+    },
+    "extra": {
+        "installer-name": "frontend-fields",
+        "expose": [
+            "res/css",
+            "res/images"
+        ]
+    }
+}
