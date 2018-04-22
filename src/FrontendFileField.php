@@ -27,7 +27,7 @@ class FrontendFileField
     }
 
     public function setValue($value, $data = null) {
-        if ($value && !is_[$value]) {
+        if ($value && !is_array($value)) {
             $this->fileUrl = $value->Link();
         }
         parent::setValue($value, $data);
