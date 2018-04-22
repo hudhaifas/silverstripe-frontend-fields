@@ -1,7 +1,7 @@
 {
     "name": "hudhaifas/silverstripe-frontend-fields",
     "description": "Upload Image / File from Silverstripe frontend.",
-    "type": "silverstripe-module",
+    "type": "silverstripe-vendormodule",
     "homepage": "https://github.com/hudhaifas/silverstripe-frontend-fields",
     "keywords": ["silverstripe", "frontend", "field", "image", "file", "upload"],
     "license": "MIT",
