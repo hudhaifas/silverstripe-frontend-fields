@@ -1,18 +1,13 @@
-<div class="container">
-    <div class="row dataobject-header">
-        <div class="dataobject-card card-form">
-            <div class="dataobject-picture" data-url="" data-align="left">
-                <div class="card text-center">
-                    <a>
-                        <img src="$FileURL" alt="$Title" class="img-fluid">
-                    </a>
-                </div>
-
-            </div>
-            <div class="dataobject-brief">
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+        <div class="if-preview text-center">
+            <div class="file-loading">
                 <input $AttributesHTML />
                 <input type="hidden" name="MAX_FILE_SIZE" value="$MaxFileSize" />
+                <input type="hidden" id="DEFAULT_IMAGE" value="$FileURL" />
             </div>
         </div>
-    </div>   
+    </div>
+    <div class="col-3"></div>
 </div>

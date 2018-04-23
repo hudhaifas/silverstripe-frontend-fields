@@ -1,0 +1,44 @@
+.if-preview {
+  display: inline-block;
+}
+.if-preview .krajee-default.file-preview-frame,
+.if-preview .if-preview .krajee-default.file-preview-frame:hover {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  text-align: center;
+}
+.if-preview .file-input {
+  display: table-cell;
+  /*width: 213px;*/
+}
+.if-preview .file-input .file-preview {
+  width: 100%;
+  height: 100%;
+}
+.if-preview .file-input .file-preview .file-drop-zone {
+  width: 168px;
+  height: 242px;
+}
+.if-preview .file-input .file-preview .file-drop-zone img {
+  max-width: 156px;
+  max-height: 156px;
+}
+.if-preview .file-input .file-preview .file-drop-zone .krajee-default.file-preview-frame:not(.file-preview-error):hover {
+  box-shadow: none;
+}
+.if-preview .file-input .file-preview .file-drop-zone .krajee-default.file-preview-frame .kv-file-content {
+  max-width: 156px;
+  max-height: 156px;
+}
+.file-drop-zone-title {
+  padding: 0;
+  font-size: 16px;
+}
+.kv-reqd {
+  color: red;
+  font-family: monospace;
+  font-weight: normal;
+}
+/*# sourceMappingURL=imagefield.css.map */

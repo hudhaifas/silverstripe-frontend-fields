@@ -22,6 +22,9 @@
     "extra": {
         "installer-name": "frontend-fields",
         "expose": [
+            "res/css",
+            "res/images",
+            "res/js"
         ]
     }
 }
