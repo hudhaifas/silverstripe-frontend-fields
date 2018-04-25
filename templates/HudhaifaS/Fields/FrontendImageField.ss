@@ -1,6 +1,5 @@
 <div class="row">
-    <div class="col-3"></div>
-    <div class="col-6">
+    <div class="col-md-6 offset-md-3">
         <div class="if-preview text-center">
             <div class="file-loading">
                 <input $AttributesHTML />
@@ -9,7 +8,6 @@
             </div>
         </div>
     </div>
-    <div class="col-3"></div>
 </div>
 
 <script>
