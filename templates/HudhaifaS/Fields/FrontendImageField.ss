@@ -11,3 +11,9 @@
     </div>
     <div class="col-3"></div>
 </div>
+
+<script>
+    jQuery(document).ready(function () {
+        initFileinput();
+    });
+</script>
