@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-md-6 offset-md-3">
+    <div class="offset-md-3 col-md-6 col-12">
         <div class="if-preview text-center">
             <div class="file-loading">
                 <input $AttributesHTML />
