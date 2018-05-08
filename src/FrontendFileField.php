@@ -1,6 +1,6 @@
 <?php
 
-namespace HudhaifaS\Fields;
+namespace HudhaifaS\Forms;
 
 use SilverStripe\Forms\FileField;
 

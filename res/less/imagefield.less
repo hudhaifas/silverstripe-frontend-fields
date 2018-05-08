@@ -1,3 +1,13 @@
+@image-size: 156px;
+@image-preview-width: 168px;
+@image-preview-height: 242px;
+
+@small-image-size: 100px;
+@small-image-preview-width: 120px;
+@small-image-preview-height: 156px;
+@small-field-width: @small-image-size + 44px;
+
+
 .if-preview {
     display: inline-block;
 
@@ -18,24 +28,87 @@
             height: 100%;
 
             .file-drop-zone {
-                width: 168px;
-                height: 242px;
+                width: @image-preview-width;
+                height: @image-preview-height;
 
                 img {
-                    max-width: 156px;
-                    max-height: 156px;
+                    max-width: @image-size;
+                    max-height: @image-size;
                 }
 
-                .krajee-default.file-preview-frame {
-                    &:not(.file-preview-error):hover {
-                        box-shadow: none;
-                    }
+                .krajee-default {
+                    &.file-preview-frame {
+                        &:not(.file-preview-error):hover {
+                            box-shadow: none;
+                        }
 
-                    .kv-file-content {
-                        max-width: 156px;
-                        max-height: 156px;
+                        .kv-file-content {
+                            max-width: @image-size;
+                            max-height: @image-size;
+                        }
+
+                        .file-actions {
+                            display: none;
+                        }
                     }
                 }
+            }
+        }
+    }
+}
+
+.small-field {
+    .if-preview {
+        .file-input {
+            width: @small-field-width;
+
+            .file-preview {
+                .file-drop-zone {
+                    width: @small-image-preview-width;
+                    height: @small-image-preview-height;
+                    margin: 4px;
+
+                    img {
+                        max-width: @small-image-size;
+                        max-height: @small-image-size;
+                    }
+
+                    .krajee-default {
+                        &.file-preview-frame {
+                            &:not(.file-preview-error):hover {
+                            }
+
+                            .kv-file-content {
+                                max-width: @small-image-size;
+                                max-height: @small-image-size;
+                            }
+
+                            .file-thumbnail-footer {
+                                max-width: @small-image-size;
+
+                            }
+
+                            .file-caption-info {
+                                width: @small-image-size;
+                            }
+
+                            .file-size-info {
+                                width: @small-image-size;
+                            }
+
+                            .file-actions {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            button, .btn {
+                padding: .25rem .25rem;
+                font-size: .675rem;
+                line-height: 1.5;
+                border-radius: .2rem;
             }
         }
     }
