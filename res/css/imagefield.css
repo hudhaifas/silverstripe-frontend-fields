@@ -35,36 +35,71 @@
 .if-preview .file-input .file-preview .file-drop-zone .krajee-default.file-preview-frame .file-actions {
   display: none;
 }
-.small-field .if-preview .file-input {
+.field-sm .if-preview .file-input {
   width: 144px;
 }
-.small-field .if-preview .file-input .file-preview .file-drop-zone {
+.field-sm .if-preview .file-input .file-preview .file-drop-zone {
   width: 120px;
   height: 156px;
   margin: 4px;
 }
-.small-field .if-preview .file-input .file-preview .file-drop-zone img {
+.field-sm .if-preview .file-input .file-preview .file-drop-zone img {
   max-width: 100px;
   max-height: 100px;
 }
-.small-field .if-preview .file-input .file-preview .file-drop-zone .krajee-default.file-preview-frame .kv-file-content {
+.field-sm .if-preview .file-input .file-preview .file-drop-zone .krajee-default.file-preview-frame .kv-file-content {
   max-width: 100px;
   max-height: 100px;
 }
-.small-field .if-preview .file-input .file-preview .file-drop-zone .krajee-default.file-preview-frame .file-thumbnail-footer {
+.field-sm .if-preview .file-input .file-preview .file-drop-zone .krajee-default.file-preview-frame .file-thumbnail-footer {
   max-width: 100px;
 }
-.small-field .if-preview .file-input .file-preview .file-drop-zone .krajee-default.file-preview-frame .file-caption-info {
+.field-sm .if-preview .file-input .file-preview .file-drop-zone .krajee-default.file-preview-frame .file-caption-info {
   width: 100px;
 }
-.small-field .if-preview .file-input .file-preview .file-drop-zone .krajee-default.file-preview-frame .file-size-info {
+.field-sm .if-preview .file-input .file-preview .file-drop-zone .krajee-default.file-preview-frame .file-size-info {
   width: 100px;
 }
-.small-field .if-preview .file-input .file-preview .file-drop-zone .krajee-default.file-preview-frame .file-actions {
+.field-sm .if-preview .file-input .file-preview .file-drop-zone .krajee-default.file-preview-frame .file-actions {
   display: none;
 }
-.small-field .if-preview .file-input button,
-.small-field .if-preview .file-input .btn {
+.field-sm .if-preview .file-input button,
+.field-sm .if-preview .file-input .btn {
+  padding: .25rem .25rem;
+  font-size: .675rem;
+  line-height: 1.5;
+  border-radius: .2rem;
+}
+.field-xs .if-preview .file-input {
+  width: 116px;
+}
+.field-xs .if-preview .file-input .file-preview .file-drop-zone {
+  width: 92px;
+  height: 128px;
+  margin: 4px;
+}
+.field-xs .if-preview .file-input .file-preview .file-drop-zone img {
+  max-width: 72px;
+  max-height: 72px;
+}
+.field-xs .if-preview .file-input .file-preview .file-drop-zone .krajee-default.file-preview-frame .kv-file-content {
+  max-width: 72px;
+  max-height: 72px;
+}
+.field-xs .if-preview .file-input .file-preview .file-drop-zone .krajee-default.file-preview-frame .file-thumbnail-footer {
+  max-width: 72px;
+}
+.field-xs .if-preview .file-input .file-preview .file-drop-zone .krajee-default.file-preview-frame .file-caption-info {
+  width: 72px;
+}
+.field-xs .if-preview .file-input .file-preview .file-drop-zone .krajee-default.file-preview-frame .file-size-info {
+  width: 72px;
+}
+.field-xs .if-preview .file-input .file-preview .file-drop-zone .krajee-default.file-preview-frame .file-actions {
+  display: none;
+}
+.field-xs .if-preview .file-input button,
+.field-xs .if-preview .file-input .btn {
   padding: .25rem .25rem;
   font-size: .675rem;
   line-height: 1.5;
