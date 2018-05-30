@@ -1,21 +1,35 @@
-@image-size: 156px;
-@image-preview-width: 168px;
-@image-preview-height: 242px;
+@image-size: 100px;
+@image-footer: 40px;
+@image-preview-padding: 3px;
+@image-preview-width: (@image-size + 12px);
+@image-preview-height: (@image-preview-width + @image-footer);
+@field-width: @image-preview-width;
 
-@sm-image-size: 100px;
-@sm-image-preview-width: 120px;
-@sm-image-preview-height: 156px;
-@sm-field-width: @sm-image-size + 44px;
+@lg-image-size: 156px;
+@lg-image-footer: 70px;
+@lg-image-preview-width: (@lg-image-size + 12px);
+@lg-image-preview-height: (@lg-image-preview-width + @lg-image-footer);
+@lg-field-width: @lg-image-preview-width;
+@lg-image-preview-padding: 8px;
+
+@sm-image-size: 88px;
+@sm-image-footer: 30px;
+@sm-image-preview-padding: 3px;
+@sm-image-preview-width: (@sm-image-size + 12px);
+@sm-image-preview-height: (@sm-image-preview-width + @sm-image-footer);
+@sm-field-width: @sm-image-preview-width;
 
 @xs-image-size: 72px;
-@xs-image-preview-width: 92px;
-@xs-image-preview-height: 128px;
-@xs-field-width: @xs-image-size + 44px;
+@xs-image-footer: 24px;
+@xs-image-preview-padding: 2px;
+@xs-image-preview-width: (@xs-image-size + 12px);
+@xs-image-preview-height: (@xs-image-preview-width + @xs-image-footer);
+@xs-field-width: @xs-image-preview-width;
 
 .if-preview {
     display: inline-block;
 
-    .krajee-default.file-preview-frame,.if-preview .krajee-default.file-preview-frame:hover {
+    .krajee-default.file-preview-frame, .if-preview .krajee-default.file-preview-frame:hover {
         margin: 0;
         padding: 0;
         border: none;
@@ -25,11 +39,12 @@
 
     .file-input {
         display: table-cell;
-        /*width: 213px;*/
+        width: @field-width;
 
         .file-preview {
             width: 100%;
             height: 100%;
+            padding: @image-preview-padding;
 
             .file-drop-zone {
                 width: @image-preview-width;
@@ -38,6 +53,7 @@
                 img {
                     max-width: @image-size;
                     max-height: @image-size;
+                    font-size: 13px;
                 }
 
                 .krajee-default {
@@ -51,11 +67,95 @@
                             max-height: @image-size;
                         }
 
+                        .file-thumbnail-footer {
+                            max-width: @image-size;
+                            height: @image-footer;
+                        }
+
+                        .file-caption-info {
+                            width: @image-size;
+                            font-size: 11px;
+                        }
+
+                        .file-size-info {
+                            width: @image-size;
+                            font-size: 11px;
+                        }
+
                         .file-actions {
                             display: none;
                         }
                     }
                 }
+            }
+        }
+
+        button, .btn {
+            padding: .25rem .25rem;
+            font-size: .775rem;
+            line-height: 1.5;
+            border-radius: .2rem;
+        }
+    }
+}
+
+.field-lg {
+    .if-preview {
+        .file-input {
+            width: @lg-field-width;
+
+            .file-preview {
+                padding: @lg-image-preview-padding;
+
+                .file-drop-zone {
+                    width: @lg-image-preview-width;
+                    height: @lg-image-preview-height;
+                    margin: 4px;
+
+                    img {
+                        max-width: @lg-image-size;
+                        max-height: @lg-image-size;
+                        font-size: 14px;
+                    }
+
+                    .krajee-default {
+                        &.file-preview-frame {
+                            &:not(.file-preview-error):hover {
+                            }
+
+                            .kv-file-content {
+                                max-width: @lg-image-size;
+                                max-height: @lg-image-size;
+                            }
+
+                            .file-thumbnail-footer {
+                                max-width: @lg-image-size;
+                                height: @lg-image-footer;
+                            }
+
+                            .file-caption-info {
+                                width: @lg-image-size;
+                                font-size: 11px;
+                            }
+
+                            .file-size-info {
+                                width: @lg-image-size;
+                                font-size: 11px;
+                            }
+
+                            .file-actions {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            button, .btn {
+                padding: .25rem .25rem;
+                font-size: .675rem;
+                line-height: 1.5;
+                border-radius: .2rem;
             }
         }
     }
@@ -67,6 +167,8 @@
             width: @sm-field-width;
 
             .file-preview {
+                padding: @sm-image-preview-padding;
+
                 .file-drop-zone {
                     width: @sm-image-preview-width;
                     height: @sm-image-preview-height;
@@ -90,15 +192,19 @@
 
                             .file-thumbnail-footer {
                                 max-width: @sm-image-size;
-
+                                height: @sm-image-footer;
                             }
 
                             .file-caption-info {
                                 width: @sm-image-size;
+                                height: 12px;
+                                font-size: 10px;
                             }
 
                             .file-size-info {
                                 width: @sm-image-size;
+                                height: 12px;
+                                font-size: 10px;
                             }
 
                             .file-actions {
@@ -111,7 +217,7 @@
 
             button, .btn {
                 padding: .25rem .25rem;
-                font-size: .675rem;
+                font-size: .875rem;
                 line-height: 1.5;
                 border-radius: .2rem;
             }
@@ -125,6 +231,8 @@
             width: @xs-field-width;
 
             .file-preview {
+                padding: @xs-image-preview-padding;
+
                 .file-drop-zone {
                     width: @xs-image-preview-width;
                     height: @xs-image-preview-height;
@@ -148,15 +256,19 @@
 
                             .file-thumbnail-footer {
                                 max-width: @xs-image-size;
-
+                                height: @xs-image-footer;
                             }
 
                             .file-caption-info {
                                 width: @xs-image-size;
+                                height: 10px;
+                                font-size: 9px;
                             }
 
                             .file-size-info {
                                 width: @xs-image-size;
+                                height: 10px;
+                                font-size: 9px;
                             }
 
                             .file-actions {
