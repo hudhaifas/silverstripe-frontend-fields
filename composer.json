@@ -26,5 +26,10 @@
             "res/images",
             "res/js"
         ]
+    },
+    "autoload": {
+        "psr-4": {
+            "HudhaifaS\\Forms\\": "src/"
+        }
     }
 }
