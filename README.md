@@ -2,10 +2,13 @@
 
 [![Latest Stable Version](https://poser.pugx.org/hudhaifas/silverstripe-frontend-fields/v/stable)](https://packagist.org/packages/hudhaifas/silverstripe-frontend-fields) [![Total Downloads](https://poser.pugx.org/hudhaifas/silverstripe-frontend-fields/downloads)](https://packagist.org/packages/hudhaifas/silverstripe-frontend-fields) [![Latest Unstable Version](https://poser.pugx.org/hudhaifas/silverstripe-frontend-fields/v/unstable)](https://packagist.org/packages/hudhaifas/silverstripe-frontend-fields) [![License](https://poser.pugx.org/hudhaifas/silverstripe-frontend-fields/license)](https://packagist.org/packages/hudhaifas/silverstripe-frontend-fields)
 
-Upload Image / File from Silverstripe frontend
+Provide the following fields for Silverstripe Frontend
+- Upload Image / File Field
+- Rich Text Field
 
 ### Features
 - Allow upload Image/File from the frontend
+- Provide HTML field from the frontend
 
 ### Requirements
 - SilverStripe Framework 4.x
@@ -15,6 +18,14 @@ Upload Image / File from Silverstripe frontend
 - Install the module through composer:
 `$ composer require hudhaifas/silverstripe-frontend-fields`
 - Run dev/build
+
+## Bugtracker
+Issued and bugs are tracked on [github.com].
+
+### Credit
+This modules has used the following libraries
+- [kartik-v/bootstrap-fileinput] for Frontend Image field
+- [webfashionist/RichText] for Frontend RichText field
 
 ### License
 
@@ -37,5 +48,6 @@ Upload Image / File from Silverstripe frontend
     CONTRACT,  TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
     DEALINGS IN THE SOFTWARE.
 
-
-   [github.com]: <http://github.com/hudhaifas/silverstripe-librarian/issues>
+   [github.com]: <https://github.com/hudhaifas/silverstripe-frontend-fields/issues>
+   [kartik-v/bootstrap-fileinput]: <https://github.com/kartik-v/bootstrap-fileinput>
+   [webfashionist/RichText]: <https://github.com/webfashionist/RichText>
