@@ -5,9 +5,9 @@ namespace HudhaifaS\Forms;
 /**
  *
  * @author Hudhaifa Shatnawi <hudhaifa.shatnawi@gmail.com>
- * @version 1.0, Apr 20, 2018 - 5:38:24 PM
+ * @version 1.0, Jul 11, 2018 - 2:51:01 PM
  */
-class FrontendImageField
+class FrontendAudioField
         extends FrontendFileField {
 
     /**
@@ -19,7 +19,8 @@ class FrontendImageField
      *    ["jpg","GIF"]
      * </code>
      */
-    public $allowedExtensions = ["jpg", "GIF", "png"];
+    public $allowedExtensions = ["mp3", "ogg", "wav"];
+    public $allowedTypes = ["audio/mpeg", "audio/ogg", "audio/wav"];
 
     protected function getAcceptFileTypes() {
         $this->getValidator()->setAllowedExtensions($this->allowedExtensions);

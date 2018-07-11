@@ -12,6 +12,6 @@
 
 <script>
     jQuery(document).ready(function () {
-        initImageInput();
+        initAudioinput();
     });
 </script>
