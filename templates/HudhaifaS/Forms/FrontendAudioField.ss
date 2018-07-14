@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="" style="margin: 0 auto;">
+    <div class="frontend-audiofield" style="margin: 0 auto;">
         <div class="if-preview text-center">
             <div class="file-loading">
                 <input $AttributesHTML />

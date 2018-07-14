@@ -1,5 +1,10 @@
+var initFileinput = function () {
+    initImageInput();
+    initAudioinput();
+};
+
 var initImageInput = function () {
-    var $field = $('.file-loading input[type=file], input[type=file].file-loading');
+    var $field = $('.frontend-imagefield .file-loading input[type=file], input[type=file].file-loading');
     var defaultImage = $('#DEFAULT_IMAGE').val() || '';
 
     $field.fileinput({
@@ -17,7 +22,7 @@ var initImageInput = function () {
 };
 
 var initAudioinput = function () {
-    var $field = $('.file-loading input[type=file], input[type=file].file-loading');
+    var $field = $('.frontend-audiofield .file-loading input[type=file], input[type=file].file-loading');
     var defaultImage = $('#DEFAULT_IMAGE').val() || '';
 
     $field.fileinput({
