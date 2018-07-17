@@ -15,7 +15,7 @@ var initImageInput = function () {
         browseOnZoneClick: true,
         showUpload: false,
         previewFileType: 'any',
-        allowedFileExtensions: ["jpg", "png", "gif"],
+        allowedFileExtensions: ["jpg", "jpeg", "png", "gif"],
         defaultPreviewContent: '<img src="' + defaultImage + '" alt="Select Image" />',
     });
 
