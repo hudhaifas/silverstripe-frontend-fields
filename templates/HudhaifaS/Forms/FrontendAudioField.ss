@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="frontend-imagefield" style="margin: 0 auto;">
+    <div class="frontend-audiofield" style="margin: 0 auto;">
         <div class="if-preview text-center">
             <div class="file-loading">
                 <input $AttributesHTML />
@@ -12,6 +12,6 @@
 
 <script>
     jQuery(document).ready(function () {
-        initImageInput();
+        initAudioinput();
     });
 </script>

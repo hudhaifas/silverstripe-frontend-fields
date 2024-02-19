@@ -2,37 +2,38 @@
 
 namespace HudhaifaS\Forms;
 
+use SilverStripe\Forms\FileField;
 use SilverStripe\View\Requirements;
 
 /**
+ * Description of FrontendUploadField
  *
- * @author Hudhaifa Shatnawi <hudhaifa.shatnawi@gmail.com>
- * @version 1.0, Apr 20, 2018 - 5:38:24 PM
+ * @author hudha
  */
-class FrontendImageField
-        extends FrontendFileField {
+class FrontendFileField
+        extends FileField {
+
+    public $fileUrl;
 
     /**
-     * @var array Collection of extensions.
-     * Extension-names are treated case-insensitive.
-     *
-     * Example:
-     * <code>
-     *    ["jpg","GIF"]
-     * </code>
+     * @param array $properties
+     * @return string
      */
-    public $allowedExtensions = ["jpg", "GIF", "png"];
-
     public function Field($properties = []) {
         self::init_scripts();
+
+        $properties = array_merge($properties, [
+            'FileURL' => $this->fileUrl
+        ]);
 
         return parent::Field($properties);
     }
 
-    protected function getAcceptFileTypes() {
-        $this->getValidator()->setAllowedExtensions($this->allowedExtensions);
-
-        parent::getAcceptFileTypes();
+    public function setValue($value, $data = null) {
+        if ($value && !is_array($value)) {
+            $this->fileUrl = $value->Link();
+        }
+        parent::setValue($value, $data);
     }
 
     public static function init_scripts() {
@@ -43,8 +44,9 @@ class FrontendImageField
         // init script for this field
         Requirements::javascript('https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js');
         Requirements::javascript('hudhaifas/silverstripe-frontend-fields: res/js/vendor/fileinput.js');
+//        Requirements::javascript('hudhaifas/silverstripe-frontend-fields: res/js/vendor/locales/ar.js');
 
-        Requirements::javascript('hudhaifas/silverstripe-frontend-fields: res/js/imagefield.js');
+        Requirements::javascript('hudhaifas/silverstripe-frontend-fields: res/js/filefield.js');
     }
 
 }
